@@ -15,7 +15,7 @@ LOOP:
 
     stw     r4, SUM(r0)         # Write final accumulated value to memory.
 _end:
-    br      _end
+    break 
 
 #------------------------------------------------------------------------------#
 

@@ -1,0 +1,13 @@
+list_compute(x, y, n, upper, f):
+    count = 0
+    no change: upper: r5, f: r6 
+    change: y: r3, count: r7, *x: r8, *y: r9
+    
+    do {
+        if (*x <= upper) then
+            y[i] = f  * (*x) - 3
+        else
+            *y = 0
+            *x = upper
+            count = count + 1
+    } while(n > 0);

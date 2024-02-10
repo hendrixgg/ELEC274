@@ -1,0 +1,13 @@
+summarize_list(list, n):
+    do
+    {
+        if (list[i] < 0) then
+            PrintChar('-')
+        else if (list[i] == 0) then
+            PrintChar('0')
+        else
+            PrintChar('+')
+        end if
+        n = n - 1
+    } while (n > 0)
+

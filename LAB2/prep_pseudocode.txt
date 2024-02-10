@@ -1,0 +1,14 @@
+main::
+    PrintChar('\n')     /* print a newline character to move down one line */
+    PrintChar('2')      /* print three individual characters, */
+    PrintChar('7')      /* which will appear beside each other */
+    PrintChar('4')      /* on the same line */
+    PrintChar('\n')     /* print another newline character */
+
+PrintChar(ch)::
+    do
+        st = read JTAG UART status register
+        st = st AND 0xFFFF0000
+    while (st is zero)
+    write ch to JTAG UART data register
+
